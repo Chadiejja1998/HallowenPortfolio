@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chadi's Haunted Portfolio 🎃</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+
+  <!-- Include Styles -->
+  <%= stylesheet_link_tag 'portfolio', media: 'all', 'data-turbo-track': 'reload' %>
+
+  <!-- Include JavaScript -->
+  <%= javascript_include_tag 'halloween', 'data-turbo-track': 'reload' %>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>

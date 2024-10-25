@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadi's Haunted Portfolio 🎃</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <%= stylesheet_link_tag 'portfolio', media: 'all', 'data-turbo-track': 'reload' %>
+</head>
+<body>
+    <nav class="spooky-nav sticky-nav">
+        <ul>
+            <li><%= link_to 'About Me', about_path %> 🎃</li>
+            <li><%= link_to 'Projects', projects_path %> 🦇</li>
+            <li><%= link_to 'Contact', contact_path %> 👻</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <img src="your_image.jpg" alt="Chadi's Headshot" class="profile-image glitch">
+        <h1 class="creepy-title flicker">Welcome to My Haunted Portfolio 👻</h1>
+        <p class="gothic-paragraph">I am <span class="highlight">Chadi</span>, a developer who thrives in the dark arts of coding. Specializing in Ruby on Rails, HTML, and CSS. Beware of spooky bugs lurking in the code! 💀</p>
+
+        <h2>Skills 🎩</h2>
+        <ul class="skills-list">
+            <li>HTML <i class="fab fa-html5" title="HTML5"></i></li>
+            <li>CSS <i class="fab fa-css3-alt" title="CSS3"></i></li>
+            <li>Ruby on Rails <i class="fas fa-gem" title="Ruby on Rails"></i></li>
+        </ul>
+
+        <section>
+            <h2>Projects 🕸️</h2>
+            <div class="project ghostly" title="Click to see more details!">
+                <img src="project1-thumbnail.jpg" alt="Project 1 Screenshot" />
+                <h3><a href="link-to-project-1">Project 1</a></h3>
+                <p>This project gave me goosebumps! Built using dark Ruby magic. 🧛‍♂️</p>
+            </div>
+            <div class="project ghostly" title="Click to see more details!">
+                <img src="project2-thumbnail.jpg" alt="Project 2 Screenshot" />
+                <h3><a href="link-to-project-2">Project 2</a></h3>
+                <p>A spine-chilling experience working with CSS animations. 💀</p>
+            </div>
+            <p>Check out more projects on my <a href="your-github-url">GitHub</a>! 🚀</p>
+        </section>
+
+        <footer>
+            <h4>Let's Connect 💀</h4>
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/yourprofile" target="_blank">Twitter</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Flying Bat -->
+    <div class="bat-container">
+        <img src="<%= asset_path('bat.png') %>" alt="Flying Bat" class="flying-bat" />
+    </div>
+
+    <!-- Include JavaScript -->
+    <%= javascript_include_tag 'halloween', 'data-turbo-track': 'reload' %>
+</body>
+</html>
